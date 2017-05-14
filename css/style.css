@@ -1,0 +1,262 @@
+/**
+* fileName: style.css
+*
+* fileRemark：层叠样式表
+*
+* author: changjiu Huang
+*
+* email: 99795427@qq.com
+*
+* create log 2017年5月14日12:00:00
+*
+* update log 2017年5月14日12:30:00
+*
+**/
+
+/* basic css*/
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  background: #fff url("../images/main_bg.gif") repeat-x top left;
+}
+
+p {
+  margin: 0;
+  text-align: left;
+}
+
+a:link {
+  font-weight: bold;
+  color: #616157;
+}
+
+a:visited {
+  font-weight: bold;
+  color: #616157;
+}
+
+a:hover, a:active {
+  color: 814610;
+}
+
+/* 具体设计 */
+.page-wrapper {
+  width: 770px;
+  padding: 0;
+  margin: 0;
+}
+
+.intro {
+  width: 770px;
+  padding: 0;
+  margin: 0;
+  margin-top: 28px;
+  background: url("../images/quicksum_bg.gif") no-repeat;
+}
+
+header {
+  width: 770px;
+  height: 72px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 22px;
+}
+
+header h1 {
+  float: left;
+  width: 403px;
+  height: 72px;
+  margin-top: 0;
+  background: transparent url("../images/intro_bg.jpg") no-repeat left top; 
+}
+
+header h2 {
+  float: left;
+  width: 367px;
+  height: 72px;
+  margin: 0;
+  background: transparent url("../images/intro_bg2.jpg") no-repeat left top;
+}
+
+/* 隐藏 标题 */
+header h1, header h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
+}
+
+
+/* summary css */
+.summary {
+  float: left;
+  clear: both;
+  width: 180px;
+  padding: 10px;
+  margin-top: -1.8em;
+  border-top: 1px dashed #999;
+  font-family:georgia, serif;
+  font-size: 11px;
+  line-height: 30px;
+  color: #626257;
+}
+
+/* 首字母下沉 */
+.summary p:first-child:first-letter,
+.preamble p:nth-child(2):first-letter {
+  padding-right: 5px;
+  font-size: 3em;
+  color: #811610;
+}
+
+
+/* preamble css */
+.preamble {
+  clear: both;
+  width: 180px;
+  padding: 10px;
+  line-height: 30px;
+  font-family:georgia, serif;
+  font-size: 11px;
+  color:#616157;
+  z-index: 4;
+}
+
+.preamble h3 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #811610;
+  border-bottom: 1px solid #811610;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+
+/* supporting css */
+.supporting {
+  position: absolute;
+  top: 100px;
+  width: 344px;
+  height: auto;
+  padding: 0 10px;
+  margin-left: 200px;
+  border: 1px solid #999;
+  background: #f7f7f2;
+  font-family:georgia, serif;
+  font-size: 13px;
+  box-shadow: 5px 0 5px #ccc;  
+}
+
+.explanation h3, .participation h3, 
+.benefits h3, .requirements h3 {
+  width: 300px;
+  height: 15px;
+  margin-bottom: 10px;
+  border-bottom: 1px dashed #999;
+}
+
+.explanation h3 {
+  background: transparent url("../images/sup_h3_a.gif") no-repeat;
+}
+
+.participation h3 {
+  background: transparent url("../imagess/up_h3_b.gif") no-repeat;
+}
+
+.benefits h3 {
+  background: transparent url("../images/sup_h3_c.gif") no-repeat;
+}
+
+.requirements h3 {
+  background: transparent url("../images/sup_h3_d.gif") no-repeat;
+}
+
+.supporting h3 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
+}
+
+footer {
+  padding-bottom: 10px;
+  margin-top: 10px;
+  border-top: 1px solid #ccc;
+  font-family:verdana, arial, sans serif;
+  font-size: 10px;
+  text-align: center;
+}
+
+footer a:link, footer a:visited { 
+	margin: 5px;
+	font-weight: normal; 
+}
+
+
+/* sidebar css */
+.sidebar {
+  position: absolute;
+  left: 575px;
+  top: 100px;
+  width: 200px;
+  height: 100%;
+  font-size: 12px;
+}
+
+.sidebar h3 {
+  width: 180px;
+  height: 20px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-indent: 100%;
+}
+
+.sidebar h3.select {
+  margin-bottom: 10px;
+  background: transparent url("../images/linklist_a.gif") no-repeat left bottom;
+}
+
+.sidebar h3.archives {
+  padding-top: 5px;
+  border-top: 1px dashed #999;
+  margin: 25px 10px 10px 0;
+  background: transparent url("../images/linklist_b.gif") no-repeat left bottom;
+}
+
+.sidebar h3.resources {
+  padding-top: 5px;
+  border-top: 1px dashed #999;
+  margin: 25px 10px 10px 0;
+  background: transparent url("../images/linklist_c.gif") no-repeat left bottom;
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+  color: #555;
+}
+
+.sidebar ul li {
+  padding-top: 5px;
+  margin-bottom: 5px;
+  list-style: none;
+  background: transparent;
+}
+
+.sidebar li a:link { 
+	color: #555;
+}
+
+.sidebar li a:visited {
+	color: #555;
+}
+
+.sidebar li a:hover, .sidebar li a:active {
+	color:#811610;
+}	
+
+a.designer-name:link, a.designer-name:visited,
+a.designer-name:hover, a.designer-name:active {
+  font-weight: normal;
+}
